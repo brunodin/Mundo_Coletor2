@@ -1,0 +1,12 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+apply from : './../../../base_config.gradle'
+
+dependencies {
+
+    implementation project(Modules.desingSystem)
+    implementation project(Modules.common)
+}

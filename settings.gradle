@@ -1,0 +1,44 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+apply from: './dependencies.gradle'
+
+rootProject.name = "Mundo Coletor"
+
+include Modules.values() as String[]
+
+Modules.each { key, module ->
+    def moduleName = module.replace(":", "")
+    def modulePresentation = "$module${module}_presentation"
+    def moduleDomain = "$module${module}_domain"
+    def moduleData = "$module${module}_data"
+    switch (module) {
+        case Modules.app:
+            break
+        case Modules.desingSystem:
+            project(module).projectDir = new File(settingsDir, "./libs/$moduleName")
+            break
+        case Modules.common:
+            project(module).projectDir = new File(settingsDir, "./libs/$moduleName")
+            break
+        default:
+            include modulePresentation, moduleDomain, moduleData
+            project(module).projectDir = new File(settingsDir, "./libs/$moduleName")
+            project(modulePresentation).projectDir = new File(settingsDir, "./libs/${moduleName}/${moduleName}_presentation")
+            project(moduleDomain).projectDir = new File(settingsDir, "./libs/${moduleName}/${moduleName}_domain")
+            project(moduleData).projectDir = new File(settingsDir, "./libs/${moduleName}/${moduleName}_data")
+            break
+    }
+}

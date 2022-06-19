@@ -1,0 +1,15 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+apply from : './../../base_config.gradle'
+
+dependencies {
+    def module = Modules.register
+    def modulePresentation = "$module${module}_presentation"
+    def moduleDomain = "$module${module}_domain"
+    def moduleData = "$module${module}_data"
+    implementation project(modulePresentation)
+    implementation project(moduleDomain)
+    implementation project(moduleData)
+}

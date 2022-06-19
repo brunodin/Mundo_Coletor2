@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    Form Materials-->
+    <string name="register_form_materials_title">Quais são os materiais e como você os coleta?</string>
+    <string name="register_form_material_select_material">Selecione pelo menos um material:</string>
+    <string name="register_form_material_select_kind_material">Selecione o tipo de material</string>
+</resources>
