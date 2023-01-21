@@ -6,7 +6,6 @@ plugins {
 apply from : './../../../base_config.gradle'
 
 dependencies {
-
-    implementation project(Modules.desingSystem)
+    api project(Modules.desingSystem)
     implementation project(Modules.common)
 }

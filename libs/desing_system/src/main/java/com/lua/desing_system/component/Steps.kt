@@ -27,7 +27,7 @@ fun Steps(
         modifier = modifier
             .height(height)
             .fillMaxWidth()
-            .background(shape = RoundedCornerShape(Size.SizeXSM), color = DsColor.Support200)
+            .background(shape = RoundedCornerShape(Size.Size2XSM), color = DsColor.Support200)
             .border(width = Line.LineMD, color = DsColor.Support100),
         color = progressColor,
         backgroundColor = backgroundColor,

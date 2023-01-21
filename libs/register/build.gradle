@@ -12,4 +12,6 @@ dependencies {
     implementation project(modulePresentation)
     implementation project(moduleDomain)
     implementation project(moduleData)
+    api project(Modules.desingSystem)
+
 }

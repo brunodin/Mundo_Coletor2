@@ -1,4 +1,4 @@
-package com.lua.mundocoletor.ui.theme
+package com.lua.desing_system.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
@@ -7,15 +7,17 @@ import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
 
 private val DarkColorPalette = darkColors(
-    primary = Purple200,
-    primaryVariant = Purple700,
-    secondary = Teal200
+    primary = DsColor.Primary100,
+    primaryVariant = DsColor.Primary40,
+    secondary = DsColor.Primary10,
+    onSurface = DsColor.Support100
 )
 
 private val LightColorPalette = lightColors(
-    primary = Purple500,
-    primaryVariant = Purple700,
-    secondary = Teal200
+    primary = DsColor.Primary100,
+    primaryVariant = DsColor.Primary40,
+    secondary = DsColor.Primary10,
+    onSurface = DsColor.Support100
 
     /* Other default colors to override
     background = Color.White,
@@ -37,7 +39,7 @@ fun MundoColetorTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Comp
 
     MaterialTheme(
         colors = colors,
-        typography = Typography,
+        typography = Font,
         shapes = Shapes,
         content = content
     )

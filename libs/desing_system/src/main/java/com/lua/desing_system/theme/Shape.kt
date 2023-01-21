@@ -1,4 +1,4 @@
-package com.lua.mundocoletor.ui.theme
+package com.lua.desing_system.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

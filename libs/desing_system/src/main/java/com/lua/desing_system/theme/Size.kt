@@ -5,7 +5,8 @@ import androidx.compose.ui.unit.sp
 
 object Size {
     val Size0 = 0.dp
-    val SizeXSM = 8.dp
+    val Size2XSM = 8.dp
+    val SizeXSM = 10.dp
     val SizeSM = 16.dp
     val SizeMD = 20.dp
     val SizeLG = 30.dp

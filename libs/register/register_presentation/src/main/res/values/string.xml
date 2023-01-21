@@ -4,4 +4,10 @@
     <string name="register_form_materials_title">Quais são os materiais e como você os coleta?</string>
     <string name="register_form_material_select_material">Selecione pelo menos um material:</string>
     <string name="register_form_material_select_kind_material">Selecione o tipo de material</string>
+    <string name="register_form_material_select_describe_material">Descreva o item coletado (opcional)</string>
+    <string name="register_form_material_select_an_option">Selecione uma opção:</string>
+    <string name="register_form_material_select_option_my_address">Recebo no meu endereço</string>
+    <string name="register_form_material_select_option_your_address">Busco nos lugares</string>
+    <string name="register_form_material_select_option_all">Todas as opções</string>
+    <string name="register_form_material_continue">Continuar</string>
 </resources>
